@@ -1,5 +1,7 @@
 @import url("reset.css");
 
+/* header style */
+
 .mainHeader{
     display: flex;
     justify-content: space-between;
@@ -21,9 +23,34 @@
     color: aliceblue;
 }
 
-
 .linksHeader a:hover{
     transform: scale(1.3);
     color: #fff;
     transition: transform 1.3ms ease-in;
+}
+
+/* footer style */
+
+.mainFooter{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 20px 30px;
+    background-color: #2E5283;
+    color: #fff;
+}
+
+.mainFooter span:hover{
+    display: inline-block;
+    transform: scaleY(1.3);
+    color: #fff;
+    transition: transform 1.3ms ease-in;
+}
+
+
+/* home style */
+
+body{
+    display: grid;
+    grid-template-rows: max-content 1fr max-content ;
 }
