@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="/styles/detail.css">
+    <title><%= movie.title %></title>
+</head>
+<body>
+    <%- include("../partials/header") %>
+    <main class="detailMain">
+        
+        <div class="descriptSec">
+            <h1 class="descriptHead"><%= movie.title %></h1>
+            <p>Description: <%= movie.descript %></p>
+            <p>Cast: </p>
+            <p>Genres: </p>
+            <p>IMDB: <%= movie.imdb_score %></p>
+            <p>Create: <%= movie.year %></p>
+            <p>Length: <%= movie.length %> minutes</p>
+        </div>
+        <img src="<%= movie.imgurl %>" alt="<%= movie.title %> poster" class="detailImg">
+    </main>
+    <%- include("../partials/footer") %>
+</body>
+</html>

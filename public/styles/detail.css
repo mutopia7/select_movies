@@ -1,0 +1,25 @@
+@import url("home.css");
+
+.detailMain{
+    display: grid;
+    grid-template-columns: 50% 50%;
+    grid-template-rows: minmax(100%, 600px);
+    background-color: aliceblue;
+}
+
+
+.detailImg{
+    height: 100%;
+    width: 100%;
+}
+
+.descriptSec{
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding-left: 20px;
+}
+
+.descriptHead{
+    margin-top: 20px;
+}
