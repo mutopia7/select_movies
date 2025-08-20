@@ -1,0 +1,16 @@
+<ul class="moviesSec">
+    <% movies.forEach(movie=> { %>
+        <li>
+            <a href="/movies/<%= movie.id %>" class="movieLink moviesItem">
+                <img class="moviesImg" src="<%= movie.imgurl %>" alt="<%= movie.title %> poster">
+                <h3 class="title">
+                    <%= movie.title %>
+                </h3>
+                <p>IMDB: <%= movie.imdb_score %>
+                </p>
+                <p>Creat: <%= movie.year %>
+                </p>
+            </a>
+        </li>
+        <% }); %>
+</ul>

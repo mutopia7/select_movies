@@ -49,23 +49,22 @@ CREATE TABLE movie_genres (
 
 -- movies
 INSERT INTO movies (title, imgURL, descript, year, imdb_score, length) VALUES
-('Inception', 'http://www.impawards.com/2010/posters/inception_xlg.jpg',
+('Inception', 'https://image.tmdb.org/t/p/original/ljsZTbVsrQSqZgWeep2B1QiDKuh.jpg',
  'A thief who enters the dreams of others to steal secrets must pull off one last job.', 2010, 8.8, 148),
-('The Dark Knight', 'http://www.impawards.com/2008/posters/dark_knight.jpg',
+('The Dark Knight', 'https://image.tmdb.org/t/p/original/qJ2tW6WMUDux911r6m7haRef0WH.jpg',
  'Batman faces the Joker, a criminal mastermind who plunges Gotham into chaos.', 2008, 9.0, 152),
-('Interstellar', 'http://www.impawards.com/2014/posters/interstellar_ver2.jpg',
+('Interstellar', 'https://image.tmdb.org/t/p/original/gEU2QniE6E77NI6lCU6MxlNBvIx.jpg',
  'A team of explorers travel through a wormhole in space in an attempt to save humanity.', 2014, 8.6, 169);
 
 -- actors
 INSERT INTO actors (name, imgURL) VALUES
-('Leonardo DiCaprio', 'https://media.gettyimages.com/id/1921103033/photo/academy-of-motion-picture-arts-sciences-14th-annual-governors-awards.jpg?s=1024x1024&w=gi&k=20&c=g6Zf-TKdOb34jo1RtaJkzCAMtH-A0Mxz4MQFJyd3TeY='),
-('Joseph Gordon-Levitt', 'https://media.gettyimages.com/id/999060696/photo/comedy-central-roast-of-bruce-willis-red-carpet.jpg?s=1024x1024&w=gi&k=20&c=Wcn9TqPbflXtP4neTYSqENrln_2LIozJsENkmwfqyAk='),
-('Ellen Page', 'https://media.gettyimages.com/id/2155637712/photo/close-to-you-premiere-newfest-pride.jpg?s=1024x1024&w=gi&k=20&c=FRHyxLjeAFcPvda0UYG_CWQAtLjtXDkUArVpNyYnmG0='),
-('Christian Bale', 'https://media.gettyimages.com/id/1449315110/photo/the-pale-blue-eye-los-angeles-premiere-photo-call.jpg?s=1024x1024&w=gi&k=20&c=a-VAwELB-B0RNdbODjmRGi961to3P3S-sjhpM4_NwqU='),
-('Heath Ledger', 'https://media.gettyimages.com/id/71825351/photo/tiff-portrait-session-for-candy.jpg?s=1024x1024&w=gi&k=20&c=ofA_wFAZ5tpyVj21h8Q0eLFyJuLFZj4AiSDlkWBSZ_Y='),
-('Matthew McConaughey', 'https://media.gettyimages.com/id/2204462198/photo/the-rivals-of-amziah-king-world-premiere-2025-sxsw-conference-and-festival.jpg?s=1024x1024&w=gi&k=20&c=UTH5zvSVCU5sLZdjLOViyNNN0Q8y9_jsOSYfiB0mBOc='),
-('Anne Hathaway', 'https://media.gettyimages.com/id/2036419967/photo/30th-annual-screen-actors-guild-awards-arrivals.jpg?s=1024x1024&w=gi&k=20&c=MxCLRuEu3C4NctT0MyPEEgl5EfDUyfx94vFU9JYAPfA=');
-
+('Leonardo DiCaprio', 'https://image.tmdb.org/t/p/original/aLUFp0zWpLVyIOgY0scIpuuKZLE.jpg'),
+('Joseph Gordon-Levitt', 'https://image.tmdb.org/t/p/original/dhv9f3AaozOjpvjAwVzOWlmmT2V.jpg'),
+('Ellen Page', 'https://image.tmdb.org/t/p/original/eCeFgzS8dYHnMfWQT0oQitCrsSz.jpg'),
+('Christian Bale', 'https://image.tmdb.org/t/p/original/qCpZn2e3dimwbryLnqxZuI88PTi.jpg'),
+('Heath Ledger', 'https://image.tmdb.org/t/p/original/5Y9HnYYa9jF4NunY9lSgJGjSe8E.jpg'),
+('Matthew McConaughey', 'https://image.tmdb.org/t/p/original/wJiGedOCZhwMx9DezY8uwbNxmAY.jpg'),
+('Anne Hathaway', 'https://image.tmdb.org/t/p/original/nbccV2pMoyLTCeg5DQip24Eq0Jp.jpg');
 -- genres
 INSERT INTO genres (name) VALUES
 ('Action'),

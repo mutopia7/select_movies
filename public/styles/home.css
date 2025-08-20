@@ -54,3 +54,39 @@ body{
     display: grid;
     grid-template-rows: max-content 1fr max-content ;
 }
+
+/* movies sec */
+
+.moviesSec{
+    display: grid;
+    grid-template-columns: repeat(3,1fr);
+    gap: 15px;
+    align-items: center;
+    padding: 30px 30px;
+}
+
+.moviesItem{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: solid 1px rgb(59, 69, 163);
+    box-shadow: 0px 2px 5px 1px #0d0d0d3a;
+    gap: 5px;
+    border-radius: 5px;
+    padding-bottom: 10px;
+}
+
+.movieLink {
+  cursor: pointer;  
+  text-decoration: none;
+  color: inherit;   
+}
+
+.movieLink:hover {
+  box-shadow: 0px 4px 5px 1px #0d0d0d74;
+}
+
+.moviesImg{
+    width: 100%;
+    height: max-content;
+}
