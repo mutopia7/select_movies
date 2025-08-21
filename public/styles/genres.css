@@ -8,13 +8,15 @@
 }
 
 .genresItem{
+    display: flex;
+    flex-direction: column;
+
     border-bottom: solid 1px darkblue;
     padding: 30px 40px;
     text-align: center;
-    font-size: 3rem;
-    font-weight: 500;
 }
 
-.genresItem:hover{
-    transform: scale(1.2);
+.refLinks{
+    color: darkblue;
+    font-weight: 500;
 }

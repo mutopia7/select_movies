@@ -3,12 +3,11 @@
         <li class="actorsItem">
             <img src="<%= actor.imgurl %>" alt="<%= actor.name %> image" class="actorsImg">
             <h3><%= actor.name %></h3>
-            <ul style="font-weight: 500;">movies:
-                <li>movie1</li>
-                <li>movie2</li>
-                <li>movie3</li>
-                <li>movie4</li>
-                <li>movie5</li>
+            <ul style="font-weight: 500; text-align: center;">
+                <span style="font-weight: 700;">movies:</span>
+                <% actor.movies.forEach(movie => { %>
+                    <li><a href="/movie/<%= movie.id %>" class="refMovie"><%= movie.title %></a></li>
+                <% }) %>
             </ul>
         </li>
     <% }) %>

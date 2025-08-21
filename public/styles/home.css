@@ -91,3 +91,8 @@ body{
     width: 100%;
     height: max-content;
 }
+
+.refMovie{
+    font-weight: 500;
+    color: darkblue;
+}

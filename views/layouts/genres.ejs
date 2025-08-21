@@ -13,7 +13,13 @@
         <ul>
             <% genres.forEach(genre => { %>
                 <li class="genresItem">
-                    <a href=""><%= genre.name %></a>
+                    <h2><%= genre.name %></h2>
+                    <ul>
+                        <span>Movies:</span>
+                        <% genre.movies.forEach(movie => { %>
+                            <li> <a href="/movie/<%= movie.id %>" class="refLinks"><%= movie.title %></a></li>
+                        <% }) %>
+                    </ul>
                 </li> 
             <% }); %>
         </ul>

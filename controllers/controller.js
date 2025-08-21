@@ -8,7 +8,7 @@ async function renderHome(req,res) {
 async function renderDetail(req, res) {
     const id = req.params.id;
     const movie = await db.getDetailMovie(id);
-    res.render("layouts/detail", { movie: movie[0] })
+    res.render("layouts/detail", { movie: movie })
 }
 
 async function renderActors(req,res) {

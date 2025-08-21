@@ -12,12 +12,12 @@
         
         <div class="descriptSec">
             <h1 class="descriptHead"><%= movie.title %></h1>
-            <p>Description: <%= movie.descript %></p>
-            <p>Cast: </p>
-            <p>Genres: </p>
-            <p>IMDB: <%= movie.imdb_score %></p>
-            <p>Create: <%= movie.year %></p>
-            <p>Length: <%= movie.length %> minutes</p>
+            <p><span class="bold">description:</span> <%= movie.descript %></p>
+            <p><span class="bold">Cast:</span> <%= movie.actors %> </p>
+            <p><span class="bold">Genres:</span> <%= movie.genres %> </p>
+            <p><span class="bold">IMDB:</span> <%= movie.imdb_score %></p>
+            <p><span class="bold">Create:</span> <%= movie.year %></p>
+            <p><span class="bold">Length:</span> <%= movie.length %> minutes</p>
         </div>
         <img src="<%= movie.imgurl %>" alt="<%= movie.title %> poster" class="detailImg">
     </main>
