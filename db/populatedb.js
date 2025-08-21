@@ -122,30 +122,46 @@ CREATE INDEX IF NOT EXISTS idx_movie_genres_movie_id ON movie_genres(movie_id);
 CREATE INDEX IF NOT EXISTS idx_movie_genres_genre_id ON movie_genres(genre_id);
 `;
 
-async function populateDb() {
-  console.log("seeding...");
+
   
+async function populateDb() {
   let client;
+
   if (process.env.DATABASE_URL) {
-      client = new Client({
-          connectionString: process.env.DATABASE_URL,
-          ssl: { rejectUnauthorized: false }
-      });
+    client = new Client({
+      connectionString: process.env.DATABASE_URL,
+      ssl: { rejectUnauthorized: false }
+    });
   } else {
-      client = new Client({
-          host: process.env.HOST,
-          user: process.env.USER,
-          password: process.env.PASSWORD,  
-          database: process.env.DATABASE,
-          port: process.env.DB_PORT
-      });
+    client = new Client({
+      host: process.env.HOST,
+      user: process.env.USER,
+      password: process.env.PASSWORD,
+      database: process.env.DATABASE,
+      port: process.env.DB_PORT
+    });
   }
 
   await client.connect();
+
+  // بررسی اینکه جدول movies پر است یا نه
+  try {
+    const res = await client.query("SELECT COUNT(*) AS count FROM movies");
+    if (parseInt(res.rows[0].count) > 0) {
+      console.log("DB already populated, skipping.");
+      await client.end();
+      return;
+    }
+  } catch (err) {
+    // جدول وجود ندارد یا خطا، ادامه به ایجاد جدول‌ها و داده‌ها
+    console.log("Movies table not found, populating DB...");
+  }
+
   await client.query(SQL);
   await client.end();
-  console.log("done");
+  console.log("DB populated successfully.");
 }
+
 
 
 
