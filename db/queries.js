@@ -10,8 +10,13 @@ async function getDetailMovie(id) {
     return rows
 }
 
+async function getAllActors(){
+    const { rows } = await pool.query("SELECT * FROM actors");
+    return rows
+}
 
 module.exports = {
     getAllMovies,
-    getDetailMovie
+    getDetailMovie,
+    getAllActors
 }

@@ -1,0 +1,15 @@
+<ul class="actorsSec">
+    <% actors.forEach(actor => { %>
+        <li class="actorsItem">
+            <img src="<%= actor.imgurl %>" alt="<%= actor.name %> image" class="actorsImg">
+            <h3><%= actor.name %></h3>
+            <ul style="font-weight: 500;">movies:
+                <li>movie1</li>
+                <li>movie2</li>
+                <li>movie3</li>
+                <li>movie4</li>
+                <li>movie5</li>
+            </ul>
+        </li>
+    <% }) %>
+</ul>

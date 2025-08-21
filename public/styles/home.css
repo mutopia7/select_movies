@@ -57,7 +57,7 @@ body{
 
 /* movies sec */
 
-.moviesSec{
+.moviesSec, .actorsSec{
     display: grid;
     grid-template-columns: repeat(3,1fr);
     gap: 15px;
@@ -65,7 +65,7 @@ body{
     padding: 30px 30px;
 }
 
-.moviesItem{
+.moviesItem, .actorsItem{
     display: flex;
     flex-direction: column;
     align-items: center;
@@ -75,6 +75,7 @@ body{
     border-radius: 5px;
     padding-bottom: 10px;
 }
+
 
 .movieLink {
   cursor: pointer;  
@@ -86,7 +87,7 @@ body{
   box-shadow: 0px 4px 5px 1px #0d0d0d74;
 }
 
-.moviesImg{
+.moviesImg, .actorsImg{
     width: 100%;
     height: max-content;
 }

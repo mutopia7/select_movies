@@ -11,8 +11,14 @@ async function renderDetail(req, res) {
     res.render("layouts/detail", { movie: movie[0] })
 }
 
+async function renderActors(req,res) {
+    const actors = await db.getAllActors();
+    res.render("layouts/actors", {actors: actors})
+}
+
 
 module.exports = {
     renderHome,
-    renderDetail
+    renderDetail,
+    renderActors
 }
