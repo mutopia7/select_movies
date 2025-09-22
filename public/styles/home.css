@@ -119,3 +119,13 @@ body {
         flex-direction: column;
     }
 }
+
+@media (max-width: 320px){
+    #homeLink{
+        display: none;
+    }
+
+    .mainFooter h2{
+        font-size: 1rem;
+    }
+}

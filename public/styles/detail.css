@@ -7,6 +7,9 @@
     background-color: aliceblue;
 }
 
+.smallDetailImg{
+    display: none;
+}
 
 .detailImg{
     height: 100%;
@@ -28,3 +31,23 @@
     font-weight: 700;
 }
 
+@media (max-width: 580px){
+    .detailMain{
+        display: flex;
+        flex-direction: column;
+    }
+
+    .detailImg{
+        display: none;
+    }
+
+    .smallDetailImg{
+        display: block;
+        height: max-content;
+    }
+
+    .descriptSec {
+        padding-left: 10px;
+        margin-bottom: 30px;
+    }
+}

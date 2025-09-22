@@ -9,7 +9,7 @@
 <body>
     <%- include("../partials/header") %>
     <main class="detailMain">
-        
+        <img src="<%= movie.imgurl %>" alt="<%= movie.title %> poster" class="smallDetailImg">
         <div class="descriptSec">
             <h1 class="descriptHead"><%= movie.title %></h1>
             <p><span class="bold">description:</span> <%= movie.descript %></p>

@@ -1,7 +1,7 @@
 
 # Movie Land 
 
-Visit here [Movie Land](https://movieland.vercel.app/).
+Visit here [Movie Land](https://movie-land7.vercel.app/).
 
 ## Project Overview
 
