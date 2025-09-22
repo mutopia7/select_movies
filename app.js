@@ -6,7 +6,7 @@ const rateLimit = require("express-rate-limit");
 const router = require("./routes/router");
 const populateDb = require("./db/populatedb")
 
-populateDb()
+
 
 // Header security
 // app.use(helmet());
